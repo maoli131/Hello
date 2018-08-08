@@ -12,7 +12,8 @@ public class HelloWorld {
 
     // This prints out many times of I Love You
     public static void loopPrint () {
-        for (int i = 0; i < 10; i++)
+        int times = 10;
+        for (int i = 0; i < times; i++)
             System.out.println("I love you");
     }
 }
