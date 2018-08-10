@@ -1,6 +1,8 @@
 # Serves as an example Makefile for java
 
-# define compiler and flag variable - easy to modify and update
+# TODO define compiler and flag variable - easy to modify and update
+# -g: generates debug information
+# -d: specifies destination directories of .class.
 JFLAGS=-g
 JC=javac
 JA=java
