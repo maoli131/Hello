@@ -8,6 +8,7 @@ public class HelloWorld {
         System.out.println("Hello World!");
         System.out.println("I'd like to say");
         loopPrint();
+        System.out.println("Hello");
     }
 
     // This prints out many times of I Love You
@@ -16,4 +17,5 @@ public class HelloWorld {
         for (int i = 0; i < times; i++)
             System.out.println("I love you");
     }
+
 }
