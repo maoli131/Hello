@@ -1,4 +1,8 @@
-/** A sample Java program HelloWorld
+/** 
+ * FileName: HelloWorld.java
+ * This file header describes what does the file do.
+ * This HelloWorld serves as the playground of some simple Java code.
+ * 
  * @Author Mao Li
  * @Date Aug 8th, 2018
  */
@@ -10,13 +14,22 @@ public class HelloWorld {
         testPrintC(20.22);
     }
 
-    // This prints out many times of I Love You
+    /**
+     * This method header describes what does the method do,
+     * along with its parameter and return values.
+     * 
+     * This prints out many times of message.
+     * 
+     * @param: number of times to print the mesage
+     * @return: null
+     * */ 
     public static void loopPrint (int times, String message) {
+        
+        // In line comment describes the code
         for (int i = 0; i < times; i++)
             System.out.println(message);
     }
 
-    // This tests C style print statement
     public static void testPrintC (double average) {
         System.out.printf("Wha is average? %f \n", average);
     }
