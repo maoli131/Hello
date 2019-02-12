@@ -1,3 +1,6 @@
+import java.io.*;
+import java.util.Scanner;
+
 /** 
  * FileName: HelloWorld.java
  * This file header describes what does the file do.
@@ -9,9 +12,14 @@
 public class HelloWorld {
 
     public static void main (String[] args) {
-        System.out.println("Hello World!");
-        System.out.println("I'd like to say");
-        testPrintC(20.22);
+        //System.out.println("Hello World!");
+        //System.out.println("I'd like to say");
+        //testPrintC(20.22);
+        try {
+            fileIO("board");
+        } catch (Exception e) {
+            System.out.println("DO NOTHING");
+        }
     }
 
     /**
@@ -34,8 +42,18 @@ public class HelloWorld {
         System.out.printf("Wha is average? %f \n", average);
     }
 
-    public static void fileIO (String filename) {
-        
+    public static void fileIO (String filename) throws IOException {
+        File f = new File(filename);
+        Scanner s = new Scanner(f);
+
+        while (s.hasNext()) {
+            String k;
+            System.out.println(k = s.nextLine());
+            for (int i = 0; i < k.length(); i++) {
+                System.out.print(k.charAt(i));
+            }
+        }
+        s.close();
     }
 
 }
