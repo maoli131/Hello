@@ -34,4 +34,8 @@ public class HelloWorld {
         System.out.printf("Wha is average? %f \n", average);
     }
 
+    public static void fileIO (String filename) {
+        
+    }
+
 }
